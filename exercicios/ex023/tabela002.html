@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 1000px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td.column1 {
+            width: 60px;
+            text-align: center;
+        }
+
+        td.column2 {
+            width: 190px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        td.column3 {
+            width: 80px;
+        }
+        
+        td.column4 {
+            width: 100px;
+            text-align: right;
+        }
+
+        td.column5 {
+            width: 80px;
+            text-align: center;
+            color: green;
+            font-weight: bold;
+        }
+
+        td.column6 {
+            width: 100px;
+            text-align: center;
+        }
+
+        td.column7 {
+            width: 200px;
+            text-align: center;
+        }
+
+        td.num {
+            width: 100px;
+            text-align: right;
+        }
+
+        thead {
+            background-color: rgb(109, 108, 108);
+            color: white;
+        }
+
+        tfoot {
+            background-color: rgb(109, 108, 108);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de talelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY 
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH 
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>Unidade federativa</th>
+                <th>População (Censo de 2022)</th>
+                <th class>População (Censo de 2010)</th>
+                <th>Mudança</th>
+                <th>% da pop. total</th>
+                <th>País comparável (Habitantes)</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="column1">1</td>
+                <td class="column2"><img src="Bandeira_do_estado_de_São_Paulo.svg.webp"> <a href="https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo_(estado)" target="_self" rel="external">São Paulo</a></td>
+                <td class="num">44.411.238</td>
+                <td class="column4">41.262.199</td>
+                <td class="column5">+7.63%</td>
+                <td class="column6">21,88%</td>
+                <td class="column7"><img src="paises/Flag_of_Argentina.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Argentina">Argentina</a> (46.621.847)</td>
+            </tr>
+
+            <tr>
+                <td class="column1">2</td>
+                <td class="column2"><img src="Bandeira_de_Minas_Gerais.svg.png"> <a href="https://pt.wikipedia.org/wiki/Minas_Gerais" target="_self" rel="external">Minas Gerais</a></td>
+                <td class="num">20.538.718</td>
+                <td class="column4">19.597.330</td>
+                <td class="column5">+4.81%</td>
+                <td class="column6">10,11%</td>
+                <td class="column7"><img src="paises/Flag_of_Burkina_Faso.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Burquina_Fasso">Burquina Fasso</a> (20.903.273)</td>
+            </tr>
+            <tr>
+                <td class="column1">3</td>
+                <td class="column2"><img src="Bandeira_do_estado_do_Rio_de_Janeiro.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro_(estado)" target="_self" rel="external">Rio de Janeiro</a></td>
+                <td class="num">16.054.524</td>
+                <td class="column4">15.989.929</td>
+                <td class="column5">+0.40%</td>
+                <td class="column6">7,91%</td>
+                <td class="column7"><img src="paises/Flag_of_Cambodia.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Camboja">Camboja</a> (16.718.965)</td>
+            </tr>
+            <tr>
+                <td class="column1">4</td>
+                <td class="column2"><img src="Bandeira_da_Bahia.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Bahia" target="_self" rel="external">Bahia</a></td>
+                <td class="num">14.141.626</td>
+                <td class="column4">14.016.906</td>
+                <td class="column5">+0.89%</td>
+                <td class="column6">6,96%</td>
+                <td class="column7"><img src="paises/Flag_of_Zimbabwe.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Zimbabwe">Zimbabwe</a> (14.862.924)</td>
+            </tr>
+            <tr>
+                <td class="column1">5</td>
+                <td class="column2"><img src="Bandeira_do_Paraná.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Paran%C3%A1" target="_self" rel="external">Paraná</a></td>
+                <td class="num">11.444.380</td>
+                <td class="column4">10.444.526</td>
+                <td class="column5">+9.57%</td>
+                <td class="column6">5,64%</td>
+                <td class="column7"><img src="paises/Flag_of_Tunisia.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Tun%C3%ADsia">Tunísia</a> (11.818.619)</td>
+            </tr>
+            <tr>
+                <td class="column1">6</td>
+                <td class="column2"><img src="Bandeira_do_Rio_Grande_do_Sul.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Sul" target="_self" rel="external">Rio Grande do Sul</a></td>
+                <td class="num">10.882.965</td>
+                <td class="column4">10.693.929</td>
+                <td class="column5">+1.76%</td>
+                <td class="column6">5,36%</td>
+                <td class="column7"><img src="paises/Flag_of_Portugal.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Portugal">Portugal</a> (10.343.066)</td>
+            </tr>
+            <tr>
+                <td class="column1">7</td>
+                <td class="column2"><img src="Bandeira_de_Pernambuco.svg.png"> <a href="https://pt.wikipedia.org/wiki/Pernambuco" target="_self" rel="external">Pernambuco</a></td>
+                <td class="num">9.058.931</td>
+                <td class="column4">8.796.448</td>
+                <td class="column5">+2.98%</td>
+                <td class="column6">4,46%</td>
+                <td class="column7"><img src="paises/Flag_of_Austria.svg.webp"> <a href="https://pt.wikipedia.org/wiki/%C3%81ustria">Áustria</a> (9.006.398)</td>
+            </tr>
+            <tr>
+                <td class="column1">8</td>
+                <td class="column2"><img src="Bandeira_do_Ceará.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Cear%C3%A1" target="_self" rel="external">Ceará</a></td>
+                <td class="num">8.794.957</td>
+                <td class="column4">8.452.381</td>
+                <td class="column5">+4.05%</td>
+                <td class="column6">4,33%</td>
+                <td class="column7"><img src="paises/Flag_of_Papua_New_Guinea.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Papua-Nova_Guin%C3%A9">Papua-Nova Guiné</a> (8.947.024)</td>
+            </tr>
+            <tr>
+                <td class="column1">9</td>
+                <td class="column2"><img src="Bandeira_do_Pará.svg.png"> <a href="https://pt.wikipedia.org/wiki/Par%C3%A1" target="_self" rel="external">Pará</a></td>
+                <td class="num">8.121.025</td>
+                <td class="column4">7.581.051</td>
+                <td class="column5">+7.12%</td>
+                <td class="column6">4,1%</td>
+                <td class="column7"><img src="paises/Flag_of_Switzerland.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Su%C3%AD%C3%A7a">Suíça</a> (8.654.622)</td>
+            </tr>
+            <tr>
+                <td class="column1">10</td>
+                <td class="column2"><img src="Bandeira_de_Santa_Catarina.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Santa_Catarina" target="_self" rel="external">Santa Catarina</a></td>
+                <td class="num">7.610.361</td>
+                <td class="column4">6.248.436</td>
+                <td class="column5">+21.78%</td>
+                <td class="column6">3,75%</td>
+                <td class="column7"><img src="paises/Flag_of_Laos.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Laos">Laos</a> (7.749.595)</td>
+            </tr>
+            <tr>
+                <td class="column1">11</td>
+                <td class="column2"><img src="Flag_of_Goiás.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Goi%C3%A1s" target="_self" rel="external">Goiás</a></td>
+                <td class="num">7.056.495</td>
+                <td class="column4">6.003.788</td>
+                <td class="column5">+17.51%</td>
+                <td class="column6">3,47%</td>
+                <td class="column7"><img src="paises/Flag_of_Bulgaria.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Bulg%C3%A1ria">Bulgária</a> (6.948.445)</td>
+            </tr>
+            <tr>
+                <td class="column1">12</td>
+                <td class="column2"><img src="Bandeira_do_Maranhão.svg.png"> <a href="https://pt.wikipedia.org/wiki/Maranh%C3%A3o" target="_self" rel="external">Maranhão</a></td>
+                <td class="num">6.775.805</td>
+                <td class="column4">6.574.789</td>
+                <td class="column5">+3.05%</td>
+                <td class="column6">3,34%</td>
+                <td class="column7"><img src="paises/Flag_of_Bulgaria.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Bulg%C3%A1ria">Bulgária</a> (6.948.445)</td>
+            </tr>
+            <tr>
+                <td class="column1">13</td>
+                <td class="column2"><img src="Bandeira_da_Paraíba.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Para%C3%ADba" target="_self" rel="external">Paraíba</a></td>
+                <td class="num">3.974.687</td>
+                <td class="column4">3.766.528</td>
+                <td class="column5">+5.52%</td>
+                <td class="column6">1,96%</td>
+                <td class="column7"><img src="paises/Flag_of_Georgia.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Ge%C3%B3rgia">Geórgia</a> (3.989.167)</td>
+            </tr>
+            <tr>
+                <td class="column1">14</td>
+                <td class="column2"><img src="Bandeira_do_Amazonas.svg.png"> <a href="https://pt.wikipedia.org/wiki/Amazonas" target="_self" rel="external">Amazonas</a></td>
+                <td class="num">3.941.613</td>
+                <td class="column4">3.483.985</td>
+                <td class="column5">+13.12%</td>
+                <td class="column6">1,94%</td><td class="column7"><img src="paises/Flag_of_Georgia.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Ge%C3%B3rgia">Geórgia</a> (3.989.167)</td>
+            </tr>
+            <tr>
+                <td class="column1">15</td>
+                <td class="column2"><img src="Bandeira_do_Espírito_Santo.svg.png"> <a href="https://pt.wikipedia.org/wiki/Esp%C3%ADrito_Santo_(estado)" target="_self" rel="external">Espírito Santo</a></td>
+                <td class="num">3.833.712</td>
+                <td class="column4">3.514.952</td>
+                <td class="column5">+9.06%</td>
+                <td class="column6">1,89%</td>
+                <td class="column7"><img src="paises/Flag_of_Georgia.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Ge%C3%B3rgia">Geórgia</a> (3.989.167)</td>
+            </tr>
+            <tr>
+                <td class="column1">16</td>
+                <td class="column2"><img src="Bandeira_de_Mato_Grosso.svg.png"> <a href="https://pt.wikipedia.org/wiki/Mato_Grosso" target="_self" rel="external">Mato Grosso</a></td>
+                <td class="num">3.658.649</td>
+                <td class="column4">3.035.122</td>
+                <td class="column5">+20.55%</td>
+                <td class="column6">1,8%</td>
+                <td class="column7"><img src="paises/Flag_of_Georgia.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Ge%C3%B3rgia">Geórgia</a> (3.989.167)</td>
+            </tr>
+            <tr>
+                <td class="column1">17</td>
+                <td class="column2"><img src="Bandeira_do_Rio_Grande_do_Norte.svg.png"> <a href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Norte" target="_self" rel="external">Rio Grande do Norte</a></td>
+                <td class="num">3.302.729</td>
+                <td class="column4">3.168.027</td>
+                <td class="column5">+4.24%</td>
+                <td class="column6">1,63%</td>
+                <td class="column7"><img src="paises/Flag_of_Uruguay.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Uruguai">Uruguai</a> (3.473.730)</td>
+            </tr>
+            <tr>
+                <td class="column1">18</td>
+                <td class="column2"><img src="Bandeira_do_Piauí.svg.png"> <a href="https://pt.wikipedia.org/wiki/Piau%C3%AD" target="_self" rel="external">Piauí</a></td>
+                <td class="num">3.271.199</td>
+                <td class="column4">3.118.360</td>
+                <td class="column5">+4.88%</td>
+                <td class="column6">1,61%</td>
+                <td class="column7"><img src="paises/Flag_of_Bosnia_and_Herzegovina.svg.webp"> <a href="https://pt.wikipedia.org/wiki/B%C3%B3snia_e_Herzegovina">Bósnia e Herzegovina</a> (3.280.819)</td>
+            </tr>
+            <tr>
+                <td class="column1">19</td>
+                <td class="column2"><img src="Bandeira_de_Alagoas.svg.png"> <a href="https://pt.wikipedia.org/wiki/Alagoas" target="_self" rel="external">Alagoas</a></td>
+                <td class="num">3.127.683</td>
+                <td class="column4">3.120.494</td>
+                <td class="column5">+0.23%</td>
+                <td class="column6">1,54%</td>
+                <td class="column7"><img src="paises/Flag_of_Mongolia.svg.png"> <a href="https://pt.wikipedia.org/wiki/Mong%C3%B3lia">Mongólia</a> (3.278.290)</td>
+            </tr>
+            <tr>
+                <td class="column1">20</td>
+                <td class="column2"><img src="Bandeira_do_Distrito_Federal_(Brasil).svg.png"> <a href="https://pt.wikipedia.org/wiki/Distrito_Federal_(Brasil)"  target="_self" rel="external">Distrito Federal</a></td>
+                <td class="num">2.817.381</td>
+                <td class="column4">2.570.160</td>
+                <td class="column5">+9.62%</td>
+                <td class="column6">1,39%</td>
+                <td class="column7"><img src="paises/Flag_of_Armenia.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Arm%C3%A9nia">Armênia</a> (2.963.243)</td>
+            </tr>
+            <tr>
+                <td class="column1">21</td>
+                <td class="column2"><img src="Bandeira_de_Mato_Grosso_do_Sul.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Mato_Grosso_do_Sul" target="_self" rel="external">Mato Grosso do Su</a>l</td>
+                <td class="num">2.757.013</td>
+                <td class="column4">2.449.024</td>
+                <td class="column5">+12.56%</td>
+                <td class="column6">1,36%</td>
+                <td class="column7"><img src="paises/Flag_of_Albania.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Alb%C3%A2nia">Albânia</a> (2.877.797)</td>
+            </tr>
+            <tr>
+                <td class="column1">22</td>
+                <td class="column2"><img src="Bandeira_de_Sergipe.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Sergipe" target="_self" rel="external">Sergipe</a></td>
+                <td class="num">2.209.558</td>
+                <td class="column4">2.068.017</td>
+                <td class="column5">+6.86%</td>
+                <td class="column6">1,09%</td>
+                <td class="column7"><img src="paises/Flag_of_Gabon.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Gab%C3%A3o">Gabão</a> (2.225.734)</td>
+            </tr>
+            <tr>
+                <td class="column1">23</td>
+                <td class="column2"><img src="Bandeira_de_Rondônia.svg.png"> <a href="https://pt.wikipedia.org/wiki/Rond%C3%B4nia" target="_self" rel="external">Rondônia</a></td>
+                <td class="num">1.581.196</td>
+                <td class="column4">1.562.409</td>
+                <td class="column5">+1.19%</td>
+                <td class="column6">0,78%</td>
+                <td class="column7"><img src="paises/Flag_of_Bahrain.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Bahrein">Bahrein</a> (1.701.575)</td>
+            </tr>
+            <tr>
+                <td class="column1">24</td>
+                <td class="column2"><img src="Bandeira_do_Tocantins.svg.png"> <a href="https://pt.wikipedia.org/wiki/Tocantins" target="_self" rel="external">Tocantis</a></td>
+                <td class="num">1.511.196</td>
+                <td class="column4">1.383.445</td>
+                <td class="column5">+9.25%</td>
+                <td class="column6">0,74%</td>
+                <td class="column7"><img src="paises/Flag_of_Equatorial_Guinea.svg.png"> <a href="https://pt.wikipedia.org/wiki/Guin%C3%A9_Equatorial">Guiné Equatorial</a> (402.985)</td>
+            </tr>
+            <tr>
+                <td class="column1">25</td>
+                <td class="column2"><img src="Bandeira_do_Acre.svg.png"> <a href="https://pt.wikipedia.org/wiki/Acre" target="_self" rel="external">Acre</a></td>
+                <td class="num">830.018</td>
+                <td class="column4">733.559</td>
+                <td class="column5">+13.15%</td>
+                <td class="column6">0,41%</td>
+                <td class="column7"><img src="paises/Flag_of_the_Comoros.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Comores">Comores</a> (869.601)</td>
+            </tr>
+            <tr>
+                <td class="column1">26</td>
+                <td class="column2"><img src="Bandeira_do_Amapá.svg.png"> <a href="https://pt.wikipedia.org/wiki/Amap%C3%A1" target="_self" rel="external">Amapá</a></td>
+                <td class="num">733.759</td>
+                <td class="column4">669.526</td>
+                <td class="column5">+9.56%</td>
+                <td class="column6">0,36%</td>
+                <td class="column7"><img src="paises/Flag_of_Guyana.svg.png"> <a href="https://pt.wikipedia.org/wiki/Guiana">Guiana</a> (786.552)</td>
+            </tr>
+            <tr>
+                <td class="column1">27</td>
+                <td class="column2"><img src="Bandeira_de_Roraima.svg.png"> <a href="https://pt.wikipedia.org/wiki/Roraima" target="_self" rel="external">Roraíma</a></td>
+                <td class="num">636.707</td>
+                <td class="column4">450.479</td>
+                <td class="column5">+41.26%</td>
+                <td class="column6">0,31%</td>
+                <td class="column7"><img src="paises/Flag_of_Montenegro.svg.webp"> <a href="https://pt.wikipedia.org/wiki/Montenegro">Montenegro</a> (649.335)</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
