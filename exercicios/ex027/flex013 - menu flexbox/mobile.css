@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+header, header > nav {
+    flex-flow: column nowrap;
+}
+
+header > h1 {
+    flex-basis: 40px;
+}
+
+header > nav > a {
+    width: 100vw;
+}
+
+header > nav > a:hover {
+    background-color: rgb(103, 3, 3);
+    box-shadow: 1px 1px 1px black;
+}

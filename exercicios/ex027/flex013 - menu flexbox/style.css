@@ -15,37 +15,48 @@ body {
 }
 
 header {
-    background-color:gray;
+    background-color:rgb(157, 3, 3);
     color: white;
-    padding: 10px; 
+    padding: 10px;
 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header > h1 {
-    border: 1px dotted black;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.696);
-    margin-bottom: 5px;
+    margin-bottom: 7px;
+    flex: 0 0 200px;
 }
-
 header > nav {
-    border: 1px dotted black;
     font-size: .8em;
-    margin: 3px;
-    padding: 3px;
-   
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    
 }
 
 header > nav > a {
     text-decoration: none;
-    background-color: rgb(37, 35, 35);
+    background-color: rgb(103, 103, 103);
     color: white;
     padding: 6px;
     border-radius: 5px;
+    margin: 1px;
+    text-align: center;
+    font-size: 1.1em;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.603);
 }
 
 header > nav > a:hover {
-    background-color: white;
+    background-color: rgb(65, 64, 64);
     color: black;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color .5s;
+    box-shadow: 1px 1px 1px black;
 }
 
 main {
@@ -54,4 +65,24 @@ main {
     padding: 10px;
     border-radius: 10px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.336);
+}
+
+main > h2 {
+    display: block;
+    margin: auto;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: rgb(103, 103, 103);
+    width: 250px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.844);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.542);
+    padding: 5px;
+}
+
+main > p {
+    text-align: justify;
+    text-indent: 20px;
+    margin-top: 8px;
 }
